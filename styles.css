@@ -6,7 +6,7 @@
 }
 
 .hero__section{
-    background: url(./heroSectionBackground.png);
+    background: url(heroSectionBackground.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -29,7 +29,6 @@
 .navbar__menu_container{
     display: flex;
     gap: 18px;
-    /* padding-right: 18px */
 }
 
 .navbar__menu_container .user_icon{
@@ -57,7 +56,6 @@
 .hero__section_logo{
     width: 200px;
     height: 40px;
-    /* /height:auto; */
 }
 
 .hero__section_title{
@@ -128,7 +126,7 @@
 
 }
 
-/* Out of Media Queries */
+
 
 .container{
     margin: 3rem auto;
@@ -145,7 +143,6 @@
 
 .we__offer_card{
     border-radius: 10px;
-    /* background-color: aqua; */
     overflow: hidden;
     border: 1px solid #e0e0e0;
     transition: all 1s ease;
@@ -177,10 +174,11 @@
 
 .collections h1{
     font-weight: 600;
+    font-size: 40px;
 }
 
 .collections .sub__heading_container{
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -190,7 +188,7 @@
 
 .sub__heading_container span:nth-child(2){
     color: #ff7e8b;
-    font-size: 13px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -205,6 +203,7 @@
 
 .collections_card_container .card{
     height: 300px;
+    width: 11rem;
     min-width: 240px;
     background-size: cover;
     background-position: center;
@@ -213,36 +212,34 @@
 }
 
 .card1{
-    background-image: url(./collection1.jpg);
+    background-image: url(collection1.jpeg);
 }
 
 .card2{
-    background-image: url(./collection2.jpg);
+    background-image: url(collection2.jpeg);
 }
 
 .card3{
-    background-image: url(./collection3.jpg);
+    background-image: url(collection3.jpeg);
 }
 
 .card4{
-    background-image:url(./collection4.jpg);
+    background-image:url(collection4.jpeg);
 }
 
-/* rgba => Red, Green, Blue, Opacity */
 .overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.05) 50%,
-        rgba(0, 0, 0, 0.05) 85%,
-    );
-    z-index: 5;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 0.6rem;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85%,
+   );
 }
 
 .collections_card_container .card .content{
@@ -250,14 +247,20 @@
     bottom: 0;
     left: 0;
     color: white;
-    padding: 12px 16px;
-    font-size: 0.9rem;
-    z-index: 6;
+    line-height: 1.5;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding: 0 1.1rem;
+    font-size: 1rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .content h4{
-    font-weight: 400;
-    letter-spacing: 0.5px;
+    font-size: 0.80rem;
+    margin: 0.3rem 0.01rem;
 }
 
 
@@ -373,3 +376,192 @@
 .right .download__app_container div img{
     width: 35%;
 }
+
+@media only screen and (max-width: 1300px){
+    .get__the_app .semiContainer .left,
+    .get__the_app .semiContainer .right{
+        flex: 1;
+    }
+
+    .get__the_app .semiContainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .get__the_app{
+        padding: 2rem 0;
+    }
+    .get__the_app .semiContainer{
+        width: 95%;
+        flex-direction: column;
+
+    }
+    
+}
+
+.explore-options {
+    padding: 5rem 0;
+    width: 62rem;
+    margin:auto;
+  }
+  
+  .explore-options .heading {
+    margin: 0px 0px 2rem;
+    color: rgb(54, 54, 54);
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 500;
+  }
+  
+  .accordion_list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    padding: 2rem 2.4rem;
+    border: 1px solid rgb(232, 232, 232);
+    cursor: pointer;
+  }
+  
+  .accordion-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  .accordion-container i {
+    
+    font-size: 15px;
+    transition: 0.2s;
+  }
+
+  @media (max-width: 800px) {
+    .explore-options {
+      margin: 0px 2.4rem;
+      max-width: 100vw;
+      width: auto;
+    }
+  }
+
+  .footer{
+    width: 100%;
+  }
+
+  .footer_section1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer_section1 img{
+    width: 130px;
+  }
+
+  .section1__buttonContainer{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .section1__buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .navigation_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+  }
+
+  .link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .link__container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+  }
+
+  .footer__link{
+    text-decoration: none;
+    color: gray;
+    font-size: 12.5px;
+    font-weight: 300;
+  }
+
+  .footer__link:hover{
+    color: black;
+  }
+
+  .section__links_container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .section__links_container button i{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__section_logos{
+    width: 100%;
+  }
+
+  .disclaimer{
+        width: 95%;
+        color: gray;
+        margin: auto;
+        border-top: 1px solid gray;
+        padding-top: 1.5rem;
+  }
+
+  @media only screen and (max-width:900px){
+    .navigation_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media only screen and (max-width:500px){
+    .navigation_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media only screen and (max-width:300px){
+    .navigation_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
