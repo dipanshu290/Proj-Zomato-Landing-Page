@@ -4,5 +4,4 @@
 
 ## Setup created here for our application.
 
-## Completed Footer and Entire Project
 
